@@ -1,8 +1,9 @@
 import { BiSearch } from "react-icons/bi";
+import { BsPerson } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="header-cont">
+    <div className="header-cont container">
         <div className="logo-cont">
             {/* <img src="" alt="" /> */}
             <h2>GameStore</h2>
@@ -12,6 +13,9 @@ const Header = () => {
                 <input type="search" name="search" id="search" />
                 <BiSearch className="searchBtn"/>
             </div>
+        </div>
+        <div className="login-cont">
+          <BsPerson />
         </div>
     </div>
   )
