@@ -4,23 +4,34 @@
 
 body {
   margin: 0;
+  background-color: #181a25;
+  color: #ffffff;
+}
+
+#root{
+  display: flex;
+  align-items: center;
 }
 
 .container {
-  max-width: 1280px;
-  margin: 0 auto;
   text-align: center;
 }
 
 .header-cont {
-  align-items: center;
   display: flex;
-  height: 8vh;
+  align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
+  padding: 1.5em 2em;
   width: 100%;
   z-index: 100;
+  background: #1d1f2a;
+}
+
+.header-cont .logo-cont h2{
+  margin: 0;
+  font-size: 2em;
 }
 
 .header-cont ul {
@@ -46,4 +57,52 @@ body {
 
 .header-cont li:hover {
   background-color: #777;
+}
+
+.header-cont .main-nav{
+  display: flex;
+  align-items: center;
+}
+
+.header-cont .main-nav .search-cont{
+  display: flex;
+  align-items: center;  
+  background: #131521;
+  padding: 16px 20px;
+  border-radius: 8px;
+}
+
+.header-cont .main-nav .search-cont #search{
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.header-cont .main-nav .search-cont .searchBtn{
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.header-cont .right-cont{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.header-cont .right-cont .cart-cont,
+.header-cont .right-cont .login-cont{
+  padding: 10px;
+  background: #131521;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-cont .right-cont .cart-cont .cart-icon,
+.header-cont .right-cont .login-cont .login-icon{
+  font-size: 1.4rem;
+  line-height: 1;
 }

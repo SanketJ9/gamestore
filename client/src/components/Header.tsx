@@ -1,9 +1,10 @@
 import { BiSearch } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
+import { FiShoppingCart } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <div className="header-cont container">
+    <div className="header-cont">
         <div className="logo-cont">
             {/* <img src="" alt="" /> */}
             <h2>GameStore</h2>
@@ -14,8 +15,14 @@ const Header = () => {
                 <BiSearch className="searchBtn"/>
             </div>
         </div>
-        <div className="login-cont">
-          <BsPerson />
+        <div className="right-cont">
+          <div className="cart-cont">
+            <FiShoppingCart />
+          </div>
+          <div className="login-cont">
+            <BsPerson className="login-icon" />
+          </div>
+
         </div>
     </div>
   )
